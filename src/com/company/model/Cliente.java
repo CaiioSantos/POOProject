@@ -1,31 +1,37 @@
 package com.company.model;
 
 public class Cliente {
-    private String nome;
-    private String endereco;
+    private String nomeCliente;
+    private int codCliente;
     private int telefone;
     private String email;
+    private Endereco endereco;
 
+    public Cliente() {
+    }
 
-    public Cliente(String nome, String email) {
-        this.nome = nome;
+    public Cliente(String nomeCliente, int codCliente, int telefone, String email, Endereco endereco) {
+        this.nomeCliente = nomeCliente;
+        this.codCliente = codCliente;
+        this.telefone = telefone;
         this.email = email;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+
+    public String getNomeCliente() {
+        return nomeCliente;
+    }
+
+    public void setNomeCliente(String nomeCliente) {
+        this.nomeCliente = nomeCliente;
+    }
+
+    public int getCodCliente() {
+        return codCliente;
+    }
+
+    public void setCodCliente(int codCliente) {
+        this.codCliente = codCliente;
     }
 
     public int getTelefone() {
@@ -42,5 +48,13 @@ public class Cliente {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
     }
 }

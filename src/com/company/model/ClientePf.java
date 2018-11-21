@@ -4,10 +4,11 @@ public class ClientePf extends Cliente {
     private String cpf;
     private int idade;
     private String CnhTipo;
-    private String sexo;
 
-    public ClientePf(String nome, String email, String cpf, int idade, String cnhTipo) {
-        super(nome, email);
+    public ClientePf() {
+    }
+
+    public ClientePf(String cpf, int idade, String cnhTipo) {
         this.cpf = cpf;
         this.idade = idade;
         CnhTipo = cnhTipo;
@@ -37,15 +38,12 @@ public class ClientePf extends Cliente {
         CnhTipo = cnhTipo;
     }
 
-    public String getSexo() {
-        return sexo;
-    }
-
-    public void setSexo(String sexo) {
-        this.sexo = sexo;
-    }
-
-    public ClientePf(String nome, String email) {
-        super(nome, email);
+    @Override
+    public String toString() {
+        return "ClientePf{" +
+                "cpf='" + cpf + '\'' +
+                ", idade=" + idade +
+                ", CnhTipo='" + CnhTipo + '\'' +
+                '}';
     }
 }
