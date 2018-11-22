@@ -4,10 +4,16 @@ public class ClientePj extends Cliente {
     private String cnpj;
     private Motorista motorista;
 
-    public ClientePj() {
+     public ClientePj(){
+
+     }
+    public ClientePj(String cnpj, Motorista motorista) {
+        this.cnpj = cnpj;
+        this.motorista = motorista;
     }
 
-    public ClientePj(String cnpj, Motorista motorista) {
+    public ClientePj(String nomeCliente, int codCliente, int telefone, String email, Endereco endereco, int idCliente, String cnpj, Motorista motorista) {
+        super(nomeCliente, codCliente, telefone, email, endereco, idCliente);
         this.cnpj = cnpj;
         this.motorista = motorista;
     }

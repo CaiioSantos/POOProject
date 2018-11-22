@@ -45,4 +45,13 @@ public class Motorista extends ClientePj {
     public void setCnhTipo(String cnhTipo) {
         this.cnhTipo = cnhTipo;
     }
+
+    @Override
+    public String toString() {
+        return "Motorista{" +
+                "nome='" + nome + '\'' +
+                ", idade='" + idade + '\'' +
+                ", cnhTipo='" + cnhTipo + '\'' +
+                '}';
+    }
 }

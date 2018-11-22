@@ -6,16 +6,18 @@ public class Cliente {
     private int telefone;
     private String email;
     private Endereco endereco;
+    private int idCliente;
 
     public Cliente() {
     }
 
-    public Cliente(String nomeCliente, int codCliente, int telefone, String email, Endereco endereco) {
+    public Cliente(String nomeCliente, int codCliente, int telefone, String email, Endereco endereco, int idCliente) {
         this.nomeCliente = nomeCliente;
         this.codCliente = codCliente;
         this.telefone = telefone;
         this.email = email;
         this.endereco = endereco;
+        this.idCliente = idCliente;
     }
 
     public String getNomeCliente() {
@@ -56,5 +58,25 @@ public class Cliente {
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
+    }
+
+    public int getIdCliente() {
+        return idCliente;
+    }
+
+    public void setIdCliente(int idCliente) {
+        this.idCliente = idCliente;
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "nomeCliente='" + nomeCliente + '\'' +
+                ", codCliente=" + codCliente +
+                ", telefone=" + telefone +
+                ", email='" + email + '\'' +
+                ", endereco=" + endereco +
+                ", idCliente=" + idCliente +
+                '}';
     }
 }

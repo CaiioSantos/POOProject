@@ -8,12 +8,14 @@ public class Veiculo {
     private boolean arCondicionado;
     private boolean direçãoHidraulica;
     private boolean cambioAutomatico;
+    private double precoLocacao;
 
 
-    public Veiculo() {
+    public Veiculo(double precoLocacao) {
+        this.precoLocacao = precoLocacao;
     }
 
-    public Veiculo(String marca, String modelo, String placa, String tipo, boolean arCondicionado, boolean direçãoHidraulica, boolean cambioAutomatico) {
+    public Veiculo(String marca, String modelo, String placa, String tipo, boolean arCondicionado, boolean direçãoHidraulica, boolean cambioAutomatico, double precoLocacao) {
         this.marca = marca;
         this.modelo = modelo;
         this.placa = placa;
@@ -21,6 +23,7 @@ public class Veiculo {
         this.arCondicionado = arCondicionado;
         this.direçãoHidraulica = direçãoHidraulica;
         this.cambioAutomatico = cambioAutomatico;
+        this.precoLocacao = precoLocacao;
     }
 
     public String getTipo() {
@@ -77,6 +80,14 @@ public class Veiculo {
 
     public void setPlaca(String placa) {
         this.placa = placa;
+    }
+
+    public double getPrecoLocacao() {
+        return precoLocacao;
+    }
+
+    public void setPrecoLocacao(double precoLocacao) {
+        this.precoLocacao = precoLocacao;
     }
 
     @Override

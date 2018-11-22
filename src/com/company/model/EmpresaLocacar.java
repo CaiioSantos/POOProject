@@ -6,7 +6,13 @@ public class EmpresaLocacar extends Veiculo {
     private Endereco endereco;
     private String regiao;
 
+    public EmpresaLocacar(){
+
+        super(precoLocacao);
+    }
+
     public EmpresaLocacar(String nome, String cnpj, Endereco endereco, String regiao) {
+        super(precoLocacao);
         this.nome = nome;
         this.cnpj = cnpj;
         this.endereco = endereco;
@@ -14,7 +20,7 @@ public class EmpresaLocacar extends Veiculo {
     }
 
     public EmpresaLocacar(String marca, String modelo, String placa, String tipo, boolean arCondicionado, boolean direçãoHidraulica, boolean cambioAutomatico, String nome, String cnpj, Endereco endereco, String regiao) {
-        super(marca, modelo, placa, tipo, arCondicionado, direçãoHidraulica, cambioAutomatico);
+        super(marca, modelo, placa, tipo, arCondicionado, direçãoHidraulica, cambioAutomatico, precoLocacao);
         this.nome = nome;
         this.cnpj = cnpj;
         this.endereco = endereco;
@@ -51,5 +57,15 @@ public class EmpresaLocacar extends Veiculo {
 
     public void setRegiao(String regiao) {
         this.regiao = regiao;
+    }
+
+    @Override
+    public String toString() {
+        return "EmpresaLocacar{" +
+                "nome='" + nome + '\'' +
+                ", cnpj='" + cnpj + '\'' +
+                ", endereco=" + endereco +
+                ", regiao='" + regiao + '\'' +
+                '}';
     }
 }

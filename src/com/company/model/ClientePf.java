@@ -8,7 +8,8 @@ public class ClientePf extends Cliente {
     public ClientePf() {
     }
 
-    public ClientePf(String cpf, int idade, String cnhTipo) {
+    public ClientePf(String nomeCliente, int codCliente, int telefone, String email, Endereco endereco, int idCliente, String cpf, int idade, String cnhTipo) {
+        super(nomeCliente, codCliente, telefone, email, endereco, idCliente);
         this.cpf = cpf;
         this.idade = idade;
         CnhTipo = cnhTipo;
@@ -36,14 +37,5 @@ public class ClientePf extends Cliente {
 
     public void setCnhTipo(String cnhTipo) {
         CnhTipo = cnhTipo;
-    }
-
-    @Override
-    public String toString() {
-        return "ClientePf{" +
-                "cpf='" + cpf + '\'' +
-                ", idade=" + idade +
-                ", CnhTipo='" + CnhTipo + '\'' +
-                '}';
     }
 }
