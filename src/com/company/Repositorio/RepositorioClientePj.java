@@ -22,12 +22,16 @@ public class RepositorioClientePj implements IRepositorioClientePj {
 
         }
     }
-    public void adicionarClientePj (ClientePj clientePj) throws ClientePjExeption, RepositorioClientePjExeption{
+
+    @Override
+    public void adicionarClientePj(ClientePj clientePj) throws ClientePjExeption, RepositorioClientePjExeption {
         this.clientePjArrayList.add(clientePj);
     }
-    public void deletarClientePj (ClientePj clientePj) throws ClientePjExeption,RepositorioClientePjExeption{
+
+    @Override
+    public void deletarClientePj(ClientePj clientePj) throws ClientePjExeption, RepositorioClientePjExeption {
         for (int i =0; i<this.clientePjArrayList.size(); i++){
-            if (this.clientePjArrayList.get(i) == clientePj){
+            if (this.clientePjArrayList.get(i).equals(clientePj)){
                 this.clientePjArrayList.remove(i);
                 break;
             }
@@ -37,9 +41,11 @@ public class RepositorioClientePj implements IRepositorioClientePj {
 
         }
     }
+
+    @Override
     public void atualizarClientePj(ClientePj clientePj) throws ClientePjExeption, RepositorioClientePjExeption {
         for (int i =0; i<this.clientePjArrayList.size(); i++){
-            if (this.clientePjArrayList.get(i) == clientePj){
+            if (this.clientePjArrayList.get(i).equals(clientePj)){
                 this.clientePjArrayList.set(i,clientePj);
                 break;
             }
@@ -48,6 +54,7 @@ public class RepositorioClientePj implements IRepositorioClientePj {
             throw new RepositorioClientePjExeption("Cliente Não Atualizado, Ele não foi encontrado na nossa lista de clientes");
         }
     }
+
 
     @Override
     public ClientePj pesquisarClientePorNome(String clientePjNome) throws ClientePjExeption, RepositorioClientePjExeption {
@@ -82,7 +89,9 @@ public class RepositorioClientePj implements IRepositorioClientePj {
         }
     }
 
-    public  ArrayList<ClientePj> listarClientes() throws ClientePjExeption, RepositorioClientePjExeption{
+    @Override
+    public ArrayList<ClientePj> listarClientes() throws ClientePjExeption, RepositorioClientePjExeption {
         return this.clientePjArrayList;
     }
+
 }

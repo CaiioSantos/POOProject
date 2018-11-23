@@ -29,7 +29,7 @@ public class RepositorioVeiculo implements IRepositorioVeiculo {
     @Override
     public void deletarVeiculo(Veiculo veiculo) throws VeiculoExeption, RepositorioVeiculoExeption {
         for (int i =0;i<this.veiculoArrayList.size(); i++){
-            if (this.veiculoArrayList.get(i) == veiculo){
+            if (this.veiculoArrayList.get(i).equals(veiculo)){
                 this.veiculoArrayList.remove(i);
                 break;
             }
