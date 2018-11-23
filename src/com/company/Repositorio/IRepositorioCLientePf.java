@@ -11,8 +11,8 @@ public interface IRepositorioCLientePf {
     void inserirClientePf   (ClientePf obj) throws ClientePfExeption, RepositorioClientePfExeption;
     void deletarClientePf   (ClientePf obj) throws ClientePfExeption, RepositorioClientePfExeption;
     void atualizarClientePf (ClientePf obj) throws ClientePfExeption, RepositorioClientePfExeption;
-    ClientePf pesquisarClientePorNome (String obj) throws  ClientePfExeption, RepositorioClientePfExeption;
-    ClientePf pesquisarClientePorCpf  (String obj) throws  ClientePfExeption, RepositorioClientePfExeption;
+    ClientePf pesquisarClientePorNome (String clienteNome) throws  ClientePfExeption, RepositorioClientePfExeption;
+    ClientePf pesquisarClientePorCpf  (String clienteCpf) throws  ClientePfExeption, RepositorioClientePfExeption;
     ArrayList<ClientePf> listarClientes() throws ClientePfExeption, RepositorioClientePfExeption;
 
 }
