@@ -9,22 +9,22 @@ import java.util.ArrayList;
 
 public class ControllerClientePf implements IControllerClientesPf {
     private static ControllerClientePf instancia;
-    private RepositorioClientePf repositorioClientePf = RepositorioClientePf.getInstance();
+    private RepositorioClientePf repositorioClientePf =  RepositorioClientePf.getInstance();
 
-    public ControllerClientePf() throws ClientePfExeption, RepositorioClientePfExeption {
+    public ControllerClientePf() throws ClientePfExeption, RepositorioClientePfExeption{
+
     }
 
-    public static ControllerClientePf getInstance() throws ClientePfExeption, RepositorioClientePfExeption {
-        if (instancia == null) {
+    public static ControllerClientePf getInstance() throws ClientePfExeption, RepositorioClientePfExeption{
+        if (instancia == null){
             instancia = new ControllerClientePf();
         }
         return instancia;
     }
-
     @Override
     public void adicionarClientePf(ClientePf clientePf) throws ClientePfExeption, RepositorioClientePfExeption {
-    this.validarCpf(clientePf);
-    this.repositorioClientePf.adicionarClientePf(clientePf);
+        this.validarCpf(clientePf);
+        this.repositorioClientePf.adicionarClientePf(clientePf);
     }
 
     @Override
@@ -34,17 +34,17 @@ public class ControllerClientePf implements IControllerClientesPf {
         }else{
             this.repositorioClientePf.deletarClientePf(clientePf);
         }
-
     }
 
     @Override
     public void atualizarClientePf(ClientePf clientePf) throws ClientePfExeption, RepositorioClientePfExeption {
         this.repositorioClientePf.atualizarClientePf(clientePf);
+
     }
 
     @Override
     public void validarCpf(ClientePf clientePf) throws ClientePfExeption, RepositorioClientePfExeption {
-        if(clientePf.getCpf() <=1){
+        if(clientePf.getCpf()==null){
             throw new ClientePfExeption("Por favor, Informe o CPF");
         }
     }
@@ -52,15 +52,18 @@ public class ControllerClientePf implements IControllerClientesPf {
     @Override
     public ClientePf pesquisarClientePorNome(String nomeCliente) throws ClientePfExeption, RepositorioClientePfExeption {
         return this.repositorioClientePf.pesquisarClientePorNome(nomeCliente);
+
     }
 
     @Override
-    public ClientePf pesquisarClientePorCpf(int cpfCliente) throws ClientePfExeption, RepositorioClientePfExeption {
-        return this.repositorioClientePf.atualizarClientePf(cpfCliente);
+    public ClientePf pesquisarClientePorCpf(String cpfCliente) throws ClientePfExeption, RepositorioClientePfExeption {
+        return this.repositorioClientePf.pesquisarClientePorCpf(cpfCliente);
+
     }
 
     @Override
     public ArrayList<ClientePf> listarClientes() throws ClientePfExeption, RepositorioClientePfExeption {
-        return null;
+        return this.repositorioClientePf.listarClientes();
+
     }
 }

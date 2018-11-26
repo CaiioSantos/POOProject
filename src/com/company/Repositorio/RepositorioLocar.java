@@ -25,7 +25,7 @@ public class RepositorioLocar implements IRepositorioLocar {
 
     @Override
     public void locarCarro(Locar locar) throws LocarExeption, RepositorioLocarExeption {
-
+        this.locarArrayList.add(locar);
     }
 
     @Override
@@ -34,7 +34,7 @@ public class RepositorioLocar implements IRepositorioLocar {
     }
 
     @Override
-    public void renovarLocacao(Locar locar) throws LocarExeption, RepositorioLocarExeption {
+    public void precoLocacao(Locar locar) throws LocarExeption, RepositorioLocarExeption {
 
     }
 

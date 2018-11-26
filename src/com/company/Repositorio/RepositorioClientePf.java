@@ -7,7 +7,7 @@ import com.company.model.ClientePf;
 import java.util.ArrayList;
 
 public class RepositorioClientePf implements IRepositorioCLientePf {
-    private ArrayList clientePfArrayList;
+    private ArrayList<ClientePf> clientePfArrayList;
     private static RepositorioClientePf instancia;
 
     public static RepositorioClientePf getInstance() throws ClientePfExeption, RepositorioClientePfExeption {
@@ -20,28 +20,25 @@ public class RepositorioClientePf implements IRepositorioCLientePf {
 
     public RepositorioClientePf() throws ClientePfExeption, RepositorioClientePfExeption{
         if(this.clientePfArrayList == null){
-            this.clientePfArrayList = new ArrayList();
+            this.clientePfArrayList = new ArrayList<>();
         }
     }
     @Override
     public void adicionarClientePf(ClientePf clientePf) throws ClientePfExeption, RepositorioClientePfExeption {
         this.clientePfArrayList.add(clientePf);
     }
-
     @Override
     public void deletarClientePf(ClientePf clientePf) throws ClientePfExeption, RepositorioClientePfExeption {
         for (int i=0; i< this.clientePfArrayList.size(); i++){
-            if(this.clientePfArrayList.get(i).equals(clientePf)){
+            if(this.clientePfArrayList.get(i).equals(clientePf)) {
                 this.clientePfArrayList.set(i, clientePf);
                 break;
             }
         }
-
         if (clientePf == null){
             throw new RepositorioClientePfExeption("Cliente Não foi removido, Ele não foi encontrado na nossa Lista de clientes.");
         }
     }
-
     @Override
     public void atualizarClientePf(ClientePf clientePf) throws ClientePfExeption, RepositorioClientePfExeption {
         for(int i =0; i<this.clientePfArrayList.size(); i++){
@@ -58,8 +55,8 @@ public class RepositorioClientePf implements IRepositorioCLientePf {
     public ClientePf pesquisarClientePorNome(String clienteNome) throws ClientePfExeption, RepositorioClientePfExeption {
         ClientePf clientePf = null;
         for (int i = 0; i < this.clientePfArrayList.size(); i++) {
-            if (((ClientePf) this.clientePfArrayList.get(i)).getNomeCliente().equals(clienteNome)){
-                clientePf = (ClientePf)this.clientePfArrayList.get(i);
+            if ((this.clientePfArrayList.get(i)).getNomeCliente().equals(clienteNome)){
+                clientePf = this.clientePfArrayList.get(i);
                 break;
             }
         }
@@ -71,12 +68,12 @@ public class RepositorioClientePf implements IRepositorioCLientePf {
     }
 
     @Override
-    public ClientePf pesquisarClientePorCpf(int clienteCpf) throws ClientePfExeption, RepositorioClientePfExeption {
+    public ClientePf pesquisarClientePorCpf(String clienteCpf) throws ClientePfExeption, RepositorioClientePfExeption {
         ClientePf  clientePf = null;
 
         for (int i=0; i<this.clientePfArrayList.size(); i++){
-            if (((ClientePf) this.clientePfArrayList.get(i)).getCpf()==(clienteCpf)){
-                clientePf = (ClientePf)this.clientePfArrayList.get(i);
+            if ((this.clientePfArrayList.get(i)).getCpf().equals(clienteCpf)){
+                clientePf = this.clientePfArrayList.get(i);
             }
         }
         if (clientePf == null){
@@ -89,7 +86,7 @@ public class RepositorioClientePf implements IRepositorioCLientePf {
 
 
     @Override
-    public ArrayList<ClientePf> listarClientes() throws ClientePfExeption, RepositorioClientePfExeption {
+    public ArrayList listarClientes() throws ClientePfExeption, RepositorioClientePfExeption {
         return this.clientePfArrayList;
     }
 

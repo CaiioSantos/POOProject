@@ -12,7 +12,7 @@ public interface IRepositorioCLientePf {
     void deletarClientePf   (ClientePf clientePf) throws ClientePfExeption, RepositorioClientePfExeption;
     void atualizarClientePf (ClientePf clientePf) throws ClientePfExeption, RepositorioClientePfExeption;
     ClientePf pesquisarClientePorNome (String clienteNome) throws  ClientePfExeption, RepositorioClientePfExeption;
-    ClientePf pesquisarClientePorCpf  (int clienteCpf) throws  ClientePfExeption, RepositorioClientePfExeption;
-    ArrayList<ClientePf> listarClientes() throws ClientePfExeption, RepositorioClientePfExeption;
+    ClientePf pesquisarClientePorCpf  (String clienteCpf) throws  ClientePfExeption, RepositorioClientePfExeption;
+    ArrayList listarClientes() throws ClientePfExeption, RepositorioClientePfExeption;
 
 }
