@@ -1,25 +1,25 @@
 package com.company.model;
 
 public class ClientePf extends Cliente {
-    private String cpf;
+    private int cpf;
     private int idade;
     private String CnhTipo;
 
     public ClientePf() {
     }
 
-    public ClientePf(String nomeCliente, int codCliente, int telefone, String email, Endereco endereco, int idCliente, String cpf, int idade, String cnhTipo) {
+    public ClientePf(String nomeCliente, int codCliente, int telefone, String email, Endereco endereco, int idCliente, int cpf, int idade, String cnhTipo) {
         super(nomeCliente, codCliente, telefone, email, endereco, idCliente);
         this.cpf = cpf;
         this.idade = idade;
         CnhTipo = cnhTipo;
     }
 
-    public String getCpf() {
+    public int getCpf() {
         return cpf;
     }
 
-    public void setCpf(String cpf) {
+    public void setCpf(int cpf) {
         this.cpf = cpf;
     }
 
@@ -37,5 +37,14 @@ public class ClientePf extends Cliente {
 
     public void setCnhTipo(String cnhTipo) {
         CnhTipo = cnhTipo;
+    }
+
+    @Override
+    public String toString() {
+        return "ClientePf{" +
+                "cpf='" + cpf + '\'' +
+                ", idade=" + idade +
+                ", CnhTipo='" + CnhTipo + '\'' +
+                '}';
     }
 }

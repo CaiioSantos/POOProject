@@ -71,11 +71,11 @@ public class RepositorioClientePf implements IRepositorioCLientePf {
     }
 
     @Override
-    public ClientePf pesquisarClientePorCpf(String clienteCpf) throws ClientePfExeption, RepositorioClientePfExeption {
+    public ClientePf pesquisarClientePorCpf(int clienteCpf) throws ClientePfExeption, RepositorioClientePfExeption {
         ClientePf  clientePf = null;
 
         for (int i=0; i<this.clientePfArrayList.size(); i++){
-            if (((ClientePf) this.clientePfArrayList.get(i)).getCpf().equals(clienteCpf)){
+            if (((ClientePf) this.clientePfArrayList.get(i)).getCpf()==(clienteCpf)){
                 clientePf = (ClientePf)this.clientePfArrayList.get(i);
             }
         }
@@ -84,8 +84,9 @@ public class RepositorioClientePf implements IRepositorioCLientePf {
         }else{
             return clientePf;
         }
-
     }
+
+
 
     @Override
     public ArrayList<ClientePf> listarClientes() throws ClientePfExeption, RepositorioClientePfExeption {
