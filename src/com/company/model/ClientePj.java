@@ -2,20 +2,26 @@ package com.company.model;
 
 public class ClientePj extends Cliente {
     private String cnpj;
-    private Motorista motorista;
+    private Funcionario motorista;
 
-     public ClientePj(){
 
-     }
-    public ClientePj(String cnpj, Motorista motorista) {
-        this.cnpj = cnpj;
-        this.motorista = motorista;
+    public String getNome(){
+        return nome;
     }
-
-    public ClientePj(String nomeCliente, int codCliente, int telefone, String email, Endereco endereco, int idCliente, String cnpj, Motorista motorista) {
-        super(nomeCliente, codCliente, telefone, email, endereco, idCliente);
-        this.cnpj = cnpj;
-        this.motorista = motorista;
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+    public String getEmail(){
+        return email;
+    }
+    public void setEmail(String email){
+        this.email = email;
+    }
+    public int getTelefone(){
+        return  telefone;
+    }
+    public void setTelefone(int telefone){
+        this.telefone=telefone;
     }
 
     public String getCnpj() {
@@ -26,19 +32,16 @@ public class ClientePj extends Cliente {
         this.cnpj = cnpj;
     }
 
-    public Motorista getMotorista() {
+    public Funcionario getMotorista() {
         return motorista;
     }
 
-    public void setMotorista(Motorista motorista) {
+    public void setMotorista(Funcionario motorista) {
         this.motorista = motorista;
     }
 
     @Override
-    public String toString() {
-        return "ClientePj{" +
-                "cnpj='" + cnpj + '\'' +
-                ", motorista=" + motorista +
-                '}';
+    public void Pagar() {
+
     }
 }

@@ -7,18 +7,15 @@ public class Locar {
         private String dataInicio;
         private String dataFim;
         private boolean formaPg;
-        private Set<Veiculo> veiculos;
+        private Veiculo veiculos;
         private Cliente cliente;
 
-
-        public Locar(int idLocacao, String dataInicio, String dataFim, boolean formaPg, Set<Veiculo> veiculos, Cliente cliente) {
-                this.idLocacao = idLocacao;
-                this.dataInicio = dataInicio;
-                this.dataFim = dataFim;
-                this.formaPg = formaPg;
-                this.veiculos = veiculos;
+        public  Locar(Cliente cliente, Veiculo veiculo){
                 this.cliente = cliente;
+                this.veiculos = veiculo;
+
         }
+
 
         public int getIdLocacao() {
                 return idLocacao;
@@ -52,11 +49,11 @@ public class Locar {
                 this.formaPg = formaPg;
         }
 
-        public Set<Veiculo> getVeiculos() {
+        public Veiculo getVeiculos() {
                 return veiculos;
         }
 
-        public void setVeiculos(Set<Veiculo> veiculos) {
+        public void setVeiculos(Veiculo veiculos) {
                 this.veiculos = veiculos;
         }
 

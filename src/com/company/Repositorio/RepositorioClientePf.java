@@ -55,7 +55,7 @@ public class RepositorioClientePf implements IRepositorioCLientePf {
     public ClientePf pesquisarClientePorNome(String clienteNome) throws ClientePfExeption, RepositorioClientePfExeption {
         ClientePf clientePf = null;
         for (int i = 0; i < this.clientePfArrayList.size(); i++) {
-            if ((this.clientePfArrayList.get(i)).getNomeCliente().equals(clienteNome)){
+            if ((this.clientePfArrayList.get(i)).getNome().equals(clienteNome)){
                 clientePf = this.clientePfArrayList.get(i);
                 break;
             }

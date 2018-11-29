@@ -1,20 +1,38 @@
 package com.company.model;
 
 public class ClientePf extends Cliente {
+    private String idClientepf;
     private String cpf;
     private int idade;
     private String CnhTipo;
+    private Endereco endereco;
 
-    public ClientePf() {
+    public String getIdClientepf() {
+        return idClientepf;
     }
 
-    public ClientePf(String nomeCliente, int codCliente, int telefone, String email, Endereco endereco, int idCliente, String cpf, int idade, String cnhTipo) {
-        super(nomeCliente, codCliente, telefone, email, endereco, idCliente);
-        this.cpf = cpf;
-        this.idade = idade;
-        CnhTipo = cnhTipo;
+    public void setIdClientepf(String idClientepf) {
+        this.idClientepf = idClientepf;
     }
 
+    public String getNome(){
+        return nome;
+    }
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+    public String getEmail(){
+        return email;
+    }
+    public void setEmail(String email){
+        this.email = email;
+    }
+    public int getTelefone(){
+        return  telefone;
+    }
+    public void setTelefone(int telefone){
+        this.telefone=telefone;
+    }
     public String getCpf() {
         return cpf;
     }
@@ -39,12 +57,16 @@ public class ClientePf extends Cliente {
         CnhTipo = cnhTipo;
     }
 
-    @Override
-    public String toString() {
-        return "ClientePf{" +
-                "cpf='" + cpf + '\'' +
-                ", idade=" + idade +
-                ", CnhTipo='" + CnhTipo + '\'' +
-                '}';
+    public Endereco getEndereco() {
+        return endereco;
     }
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    @Override
+    public void Pagar() {
+
+    }
+
 }
