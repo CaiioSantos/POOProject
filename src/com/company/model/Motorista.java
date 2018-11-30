@@ -5,12 +5,8 @@ public class Motorista extends Funcionario {
     public String getCnhTipo() {
         return cnhTipo;
     }
-    public void setCnhTipo(String cnhTipo){
-        this.cnhTipo=cnhTipo;
-    }
-    public String getCpf(){
-        return cpf;
-    }
+    public void setCnhTipo(String cnhTipo){ this.cnhTipo=cnhTipo; }
+    public String getCpf(){ return cpf; }
     public void setCpf(String cpf){
         this.cnhTipo=cnhTipo;
     }

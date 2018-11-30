@@ -2,8 +2,16 @@ package com.company.model;
 
 public class ClientePj extends Cliente {
     private String cnpj;
-    private Funcionario motorista;
+    private String razaoSocial;
 
+
+    public String getRazaoSocial() {
+        return razaoSocial;
+    }
+
+    public void setRazaoSocial(String razaoSocial) {
+        this.razaoSocial = razaoSocial;
+    }
 
     public String getNome(){
         return nome;
@@ -23,21 +31,9 @@ public class ClientePj extends Cliente {
     public void setTelefone(int telefone){
         this.telefone=telefone;
     }
-
-    public String getCnpj() {
-        return cnpj;
-    }
-
+    public String getCnpj() { return cnpj; }
     public void setCnpj(String cnpj) {
         this.cnpj = cnpj;
-    }
-
-    public Funcionario getMotorista() {
-        return motorista;
-    }
-
-    public void setMotorista(Funcionario motorista) {
-        this.motorista = motorista;
     }
 
     @Override

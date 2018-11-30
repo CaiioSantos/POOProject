@@ -1,17 +1,17 @@
 package com.company.Controller;
 
-import com.company.Execao.ClientePfExeption;
-import com.company.Execao.RepositorioClientePfExeption;
+import com.company.Excecao.ClientePfException;
+import com.company.Excecao.RepositorioClientePfException;
 import com.company.model.ClientePf;
 
 import java.util.ArrayList;
 
 public interface IControllerClientesPf {
-    void adicionarClientePf (ClientePf clientePf) throws ClientePfExeption, RepositorioClientePfExeption;
-    void deletarClientePf (ClientePf clientePf) throws  ClientePfExeption, RepositorioClientePfExeption;
-    void atualizarClientePf (ClientePf clientePf) throws  ClientePfExeption, RepositorioClientePfExeption;
-    void validarCpf (ClientePf clientePf) throws  ClientePfExeption, RepositorioClientePfExeption;
-    ClientePf pesquisarClientePorNome (String nomeCliente) throws ClientePfExeption, RepositorioClientePfExeption;
-    ClientePf pesquisarClientePorCpf (String cpfCliente) throws  ClientePfExeption, RepositorioClientePfExeption;
-    ArrayList<ClientePf> listarClientes() throws  ClientePfExeption, RepositorioClientePfExeption;
+    void adicionarClientePf (ClientePf clientePf) throws ClientePfException, RepositorioClientePfException;
+    void deletarClientePf (ClientePf clientePf) throws ClientePfException, RepositorioClientePfException;
+    void atualizarClientePf (ClientePf clientePf) throws ClientePfException, RepositorioClientePfException;
+    void validarCpf (ClientePf clientePf) throws ClientePfException, RepositorioClientePfException;
+    ClientePf pesquisarClientePorNome (String nomeCliente) throws ClientePfException, RepositorioClientePfException;
+    ClientePf pesquisarClientePorCpf (String cpfCliente) throws ClientePfException, RepositorioClientePfException;
+    ArrayList<ClientePf> listarClientes() throws ClientePfException, RepositorioClientePfException;
 }

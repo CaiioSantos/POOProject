@@ -16,7 +16,6 @@ public class Locar {
 
         }
 
-
         public int getIdLocacao() {
                 return idLocacao;
         }

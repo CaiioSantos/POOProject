@@ -1,7 +1,7 @@
 package com.company.Controller;
 
-import com.company.Execao.LocarExeption;
-import com.company.Execao.RepositorioLocarExeption;
+import com.company.Excecao.LocarException;
+import com.company.Excecao.RepositorioLocarException;
 import com.company.Repositorio.RepositorioLocar;
 import com.company.model.ClientePf;
 import com.company.model.ClientePj;
@@ -14,10 +14,10 @@ public class ControllerLocar implements IControllerLocar {
     private static ControllerLocar instancia;
     private RepositorioLocar repositorioLocar= RepositorioLocar.getInstance();
 
-    public ControllerLocar() throws LocarExeption , RepositorioLocarExeption{
+    public ControllerLocar() throws LocarException, RepositorioLocarException {
 
     }
-    public static ControllerLocar getInstance() throws LocarExeption,RepositorioLocarExeption{
+    public static ControllerLocar getInstance() throws LocarException, RepositorioLocarException {
         if (instancia == null){
             instancia = new ControllerLocar();
         }
@@ -25,32 +25,32 @@ public class ControllerLocar implements IControllerLocar {
     }
 
     @Override
-    public void locarCarroPf(Veiculo veiculo, ClientePf clientePf) throws LocarExeption, RepositorioLocarExeption {
+    public void locarCarroPf(Veiculo veiculo, ClientePf clientePf) throws LocarException, RepositorioLocarException {
 
     }
 
     @Override
-    public void devolverCarroLocadoPf(Veiculo veiculo, ClientePf clientePf) throws LocarExeption, RepositorioLocarExeption {
+    public void devolverCarroLocadoPf(Veiculo veiculo, ClientePf clientePf) throws LocarException, RepositorioLocarException {
 
     }
 
     @Override
-    public void locarCarroPj(Veiculo veiculo, ClientePj clientePj) throws LocarExeption, RepositorioLocarExeption {
+    public void locarCarroPj(Veiculo veiculo, ClientePj clientePj) throws LocarException, RepositorioLocarException {
 
     }
 
     @Override
-    public void devolverCarroLocadoPj(Veiculo veiculo, ClientePj clientePj) throws LocarExeption, RepositorioLocarExeption {
+    public void devolverCarroLocadoPj(Veiculo veiculo, ClientePj clientePj) throws LocarException, RepositorioLocarException {
 
     }
 
     @Override
-    public void precoLocacao(Locar locar) throws LocarExeption, RepositorioLocarExeption {
+    public void precoLocacao(Locar locar) throws LocarException, RepositorioLocarException {
 
     }
 
     @Override
-    public ArrayList<Locar> listarlocacoes() throws LocarExeption, RepositorioLocarExeption {
+    public ArrayList<Locar> listarlocacoes() throws LocarException, RepositorioLocarException {
         return null;
     }
 }
