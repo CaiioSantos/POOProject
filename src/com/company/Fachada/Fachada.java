@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class Fachada implements IControllerClientesPf {
     private static Fachada instancia;
     private IControllerClientesPf iControllerClientesPf = ControllerClientePf.getInstance();
-
+    private IControllerClientesPf controllerClientesPf;
     public static Fachada getInstance() throws ClientePfException, RepositorioClientePfException {
        if (instancia == null){
         instancia= new Fachada();
@@ -19,12 +19,12 @@ public class Fachada implements IControllerClientesPf {
         return instancia;
     }
     private Fachada() throws ClientePfException,RepositorioClientePfException{
-
+        controllerClientesPf = ControllerClientePf.getInstance();
     }
 
     @Override
     public void adicionarClientePf(ClientePf clientePf) throws ClientePfException, RepositorioClientePfException {
-
+        this.controllerClientesPf.adicionarClientePf(clientePf);
     }
 
     @Override
@@ -54,6 +54,6 @@ public class Fachada implements IControllerClientesPf {
 
     @Override
     public ArrayList<ClientePf> listarClientes() throws ClientePfException, RepositorioClientePfException {
-        return null;
+        return this.controllerClientesPf.listarClientes();
     }
 }

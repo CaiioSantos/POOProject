@@ -4,12 +4,13 @@ public class ClientePf extends Cliente {
 
     private String cpf;
     private int idade;
-    private String CnhTipo;
+    private String cnhTipo;
     private Endereco endereco;
 
-    public ClientePf(String cpf, String cnhTipo) {
+    public ClientePf(String nome ,String cpf, String cnhTipo) {
+        this.nome = nome;
         this.cpf = cpf;
-        CnhTipo = cnhTipo;
+        this.cnhTipo = cnhTipo;
     }
 
     public String getNome(){ return nome; }
@@ -41,10 +42,10 @@ public class ClientePf extends Cliente {
         this.idade = idade;
     }
     public String getCnhTipo() {
-        return CnhTipo;
+        return cnhTipo;
     }
     public void setCnhTipo(String cnhTipo) {
-        CnhTipo = cnhTipo;
+        this.cnhTipo = cnhTipo;
     }
     public Endereco getEndereco() {
         return endereco;
