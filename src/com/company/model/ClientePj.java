@@ -37,7 +37,22 @@ public class ClientePj extends Cliente {
     }
 
     @Override
-    public void Pagar() {
+    public void pagar() {
+
+    }
+
+    @Override
+    public void pagar(String codBoleto) {
+
+    }
+
+    @Override
+    public void pagar(int numeroCartao) {
+
+    }
+
+    @Override
+    public void pagar(String codBoleto, int numeroCartao) {
 
     }
 }

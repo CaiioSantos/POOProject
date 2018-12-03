@@ -51,14 +51,8 @@ public class RepositorioVeiculo implements IRepositorioVeiculo {
             throw new RepositorioVeiculoException("Carro Não foi atualizado, ELe nao foi encontrado na nossa lista de carros cadastrados");
         }
     }
-
     @Override
-    public Veiculo pesquisarVeiculoPelaPlaca(String veiculoPlaca) throws VeiculoException, RepositorioVeiculoException {
-     return null;
-    }
-
-    @Override
-    public Veiculo pesquisarVeiculoPelaMarca(String veiculoMarca) throws VeiculoException, RepositorioVeiculoException {
+    public Veiculo pesquisarVeiculoPeloModelo(String veiculoModelo) throws VeiculoException, RepositorioVeiculoException {
         return  null;
     }
 

@@ -8,9 +8,9 @@ public class Locar {
         private String dataFim;
         private boolean formaPg;
         private Veiculo veiculos;
-        private Cliente cliente;
+        private Object cliente;
 
-        public  Locar(Cliente cliente, Veiculo veiculo){
+        public  Locar(Object cliente, Veiculo veiculo){
                 this.cliente = cliente;
                 this.veiculos = veiculo;
 
@@ -56,7 +56,7 @@ public class Locar {
                 this.veiculos = veiculos;
         }
 
-        public Cliente getCliente() {
+        public Object getCliente() {
                 return cliente;
         }
 

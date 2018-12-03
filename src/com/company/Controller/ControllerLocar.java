@@ -26,7 +26,8 @@ public class ControllerLocar implements IControllerLocar {
 
     @Override
     public void locarCarroPf(Veiculo veiculo, ClientePf clientePf) throws LocarException, RepositorioLocarException {
-
+        Locar locar = new Locar(clientePf,veiculo);
+        this.repositorioLocar.locarCarro(locar);
     }
 
     @Override

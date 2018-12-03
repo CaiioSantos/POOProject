@@ -38,7 +38,7 @@ public class ControllerClientePf implements IControllerClientesPf {
     }
     @Override
     public void validarCpf(ClientePf clientePf) throws ClientePfException, RepositorioClientePfException {
-        if(clientePf.getCpf()==null){
+        if(clientePf.getCpf() == 0){
             throw new ClientePfException("Por favor, Informe o CPF");
         }
     }
@@ -47,7 +47,7 @@ public class ControllerClientePf implements IControllerClientesPf {
         return this.repositorioClientePf.pesquisarClientePorNome(nomeCliente);
     }
     @Override
-    public ClientePf pesquisarClientePorCpf(String cpfCliente) throws ClientePfException, RepositorioClientePfException {
+    public ClientePf pesquisarClientePorCpf(int cpfCliente) throws ClientePfException, RepositorioClientePfException {
         return this.repositorioClientePf.pesquisarClientePorCpf(cpfCliente);
     }
     @Override

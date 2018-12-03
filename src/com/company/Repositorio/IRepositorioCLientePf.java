@@ -12,7 +12,6 @@ public interface IRepositorioCLientePf {
     void deletarClientePf   (ClientePf clientePf) throws ClientePfException, RepositorioClientePfException;
     void atualizarClientePf (ClientePf clientePf) throws ClientePfException, RepositorioClientePfException;
     ClientePf pesquisarClientePorNome (String clienteNome) throws ClientePfException, RepositorioClientePfException;
-    ClientePf pesquisarClientePorCpf  (String clienteCpf) throws ClientePfException, RepositorioClientePfException;
+    ClientePf pesquisarClientePorCpf  (int clienteCpf) throws ClientePfException, RepositorioClientePfException;
     ArrayList listarClientes() throws ClientePfException, RepositorioClientePfException;
-
 }

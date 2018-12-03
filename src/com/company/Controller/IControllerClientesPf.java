@@ -12,6 +12,6 @@ public interface IControllerClientesPf {
     void atualizarClientePf (ClientePf clientePf) throws ClientePfException, RepositorioClientePfException;
     void validarCpf (ClientePf clientePf) throws ClientePfException, RepositorioClientePfException;
     ClientePf pesquisarClientePorNome (String nomeCliente) throws ClientePfException, RepositorioClientePfException;
-    ClientePf pesquisarClientePorCpf (String cpfCliente) throws ClientePfException, RepositorioClientePfException;
+    ClientePf pesquisarClientePorCpf (int cpfCliente) throws ClientePfException, RepositorioClientePfException;
     ArrayList<ClientePf> listarClientes() throws ClientePfException, RepositorioClientePfException;
 }

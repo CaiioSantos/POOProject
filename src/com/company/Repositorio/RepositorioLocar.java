@@ -2,7 +2,9 @@ package com.company.Repositorio;
 
 import com.company.Excecao.LocarException;
 import com.company.Excecao.RepositorioLocarException;
+import com.company.model.ClientePf;
 import com.company.model.Locar;
+import com.company.model.Veiculo;
 
 import java.util.ArrayList;
 
@@ -30,7 +32,7 @@ public class RepositorioLocar implements IRepositorioLocar {
 
     @Override
     public void devolverCarroLocado(Locar locar) throws LocarException, RepositorioLocarException {
-
+        this.locarArrayList.remove(locar);
     }
 
     @Override

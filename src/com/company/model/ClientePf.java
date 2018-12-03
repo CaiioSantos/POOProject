@@ -2,12 +2,12 @@ package com.company.model;
 
 public class ClientePf extends Cliente {
 
-    private String cpf;
+    private int cpf;
     private int idade;
     private String cnhTipo;
     private Endereco endereco;
 
-    public ClientePf(String nome ,String cpf, String cnhTipo) {
+    public ClientePf(String nome ,int cpf, String cnhTipo) {
         this.nome = nome;
         this.cpf = cpf;
         this.cnhTipo = cnhTipo;
@@ -29,10 +29,10 @@ public class ClientePf extends Cliente {
     public void setTelefone(int telefone){
         this.telefone=telefone;
     }
-    public String getCpf() {
+    public int getCpf() {
         return cpf;
     }
-    public void setCpf(String cpf) {
+    public void setCpf(int cpf) {
         this.cpf = cpf;
     }
     public int getIdade() {
@@ -55,6 +55,21 @@ public class ClientePf extends Cliente {
     }
 
     @Override
-    public void Pagar() {
+    public void pagar() {
+
+    }
+
+    @Override
+    public void pagar(String codBoleto) {
+    }
+
+    @Override
+    public void pagar(int numeroCartao) {
+
+    }
+
+    @Override
+    public void pagar(String codBoleto, int numeroCartao) {
+
     }
 }

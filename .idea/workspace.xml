@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef630a5b-4c04-4653-9c77-8f1135bcced7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/Controller/ControllerVeiculo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Controller/IControllerVeiculo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Controller/ControllerClientePf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Controller/ControllerClientePf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Controller/ControllerLocar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Controller/ControllerLocar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Controller/IControllerClientesPf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Controller/IControllerClientesPf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Fachada/Fachada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Fachada/Fachada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioCLientePf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioCLientePf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioLocar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioLocar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioVeiculo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Repositorio/RepositorioClientePf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Repositorio/RepositorioClientePf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Repositorio/RepositorioLocar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Repositorio/RepositorioLocar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Repositorio/RepositorioVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Repositorio/RepositorioVeiculo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Ui/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/ClientePf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/ClientePf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/ClientePj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/ClientePj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Locar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Locar.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,85 +29,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1555087985">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="556" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="556" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="11" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="11" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Ui/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="82" column="40" lean-forward="true" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioCLientePf.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Excecao/RepositorioClientePfException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Excecao/ClientePfException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Controller/IControllerClientesPf.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="364">
+              <caret line="72" column="38" lean-forward="true" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -102,8 +43,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Repositorio/RepositorioClientePf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="41" column="6" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
+            <state relative-caret-position="180">
+              <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Controller/IControllerClientesPf.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Excecao/ClientePfException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Controller/IControllerLocar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Controller/IControllerVeiculo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,34 +92,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/model/ClientePf.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-              <folding>
-                <element signature="e#746#747#0" expanded="true" />
-                <element signature="e#772#773#0" expanded="true" />
-                <element signature="e#1075#1076#0" expanded="true" />
-                <element signature="e#1113#1114#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Controller/ControllerClientePf.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Fachada/Fachada.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+            <state relative-caret-position="246">
+              <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Controller/ControllerLocar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioLocar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioVeiculo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -153,6 +136,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ClientePf</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -174,38 +162,40 @@
         <option value="$PROJECT_DIR$/src/com/company/Execao/RepositorioVeiculoExeption.java" />
         <option value="$PROJECT_DIR$/src/com/company/Execao/VeiculoExeption.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioVeiculo.java" />
         <option value="$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioClientePj.java" />
         <option value="$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioEndereco.java" />
         <option value="$PROJECT_DIR$/src/com/company/Execao/LocarExeption.java" />
         <option value="$PROJECT_DIR$/src/com/company/Execao/RepositorioLocarExeption.java" />
         <option value="$PROJECT_DIR$/src/com/company/Controller/IControllerCliente.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioCLientePf.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Controller/IControllerClientesPf.java" />
         <option value="$PROJECT_DIR$/src/com/company/Controller/IControllerClientePj.java" />
         <option value="$PROJECT_DIR$/src/com/company/Controller/ControllerClientePj.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioLocar.java" />
         <option value="$PROJECT_DIR$/src/com/company/Controller/IControllerLocar.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Repositorio/RepositorioLocar.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Controller/ControllerLocar.java" />
         <option value="$PROJECT_DIR$/src/com/company/model/Pessoa.java" />
         <option value="$PROJECT_DIR$/src/com/company/model/Funcionario.java" />
-        <option value="$PROJECT_DIR$/src/com/company/model/Cliente.java" />
-        <option value="$PROJECT_DIR$/src/com/company/model/Locar.java" />
         <option value="$PROJECT_DIR$/src/com/company/model/Motorista.java" />
         <option value="$PROJECT_DIR$/src/com/company/model/Veiculo.java" />
-        <option value="$PROJECT_DIR$/src/com/company/model/VeiculoPasseio.java" />
         <option value="$PROJECT_DIR$/src/com/company/model/Carro.java" />
         <option value="$PROJECT_DIR$/src/com/company/model/VeiculoTrabalho.java" />
         <option value="$PROJECT_DIR$/src/com/company/model/CarroTrabalho.java" />
-        <option value="$PROJECT_DIR$/src/com/company/model/ClientePj.java" />
         <option value="$PROJECT_DIR$/src/com/company/Repositorio/RepositorioClientePj.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Repositorio/RepositorioVeiculo.java" />
-        <option value="$PROJECT_DIR$/src/com/company/model/ClientePf.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioCLientePf.java" />
         <option value="$PROJECT_DIR$/src/com/company/Controller/ControllerClientePf.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Controller/IControllerClientesPf.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioVeiculo.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Repositorio/RepositorioVeiculo.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Controller/ControllerVeiculo.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Controller/IControllerVeiculo.java" />
         <option value="$PROJECT_DIR$/src/com/company/Fachada/Fachada.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Ui/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Repositorio/RepositorioLocar.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioLocar.java" />
         <option value="$PROJECT_DIR$/src/com/company/Repositorio/RepositorioClientePf.java" />
+        <option value="$PROJECT_DIR$/src/com/company/model/Locar.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Controller/ControllerLocar.java" />
+        <option value="$PROJECT_DIR$/src/com/company/model/VeiculoPasseio.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Ui/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/model/Cliente.java" />
+        <option value="$PROJECT_DIR$/src/com/company/model/ClientePf.java" />
+        <option value="$PROJECT_DIR$/src/com/company/model/ClientePj.java" />
       </list>
     </option>
   </component>
@@ -222,7 +212,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -268,6 +257,13 @@
               <item name="POOProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="POOProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="POOProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
               <item name="Repositorio" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -281,12 +277,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543796749060" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543875388236" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Música/PooProject.CarWash" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -335,9 +331,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="25" width="1600" height="875" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12473348" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22586873" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -346,7 +343,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32994187" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22451194" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2613941" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -354,7 +351,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3297587" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32937366" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.27725437" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.2761394" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -366,7 +363,7 @@
       <window_info anchor="right" id="Maven" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12473348" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22586873" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -375,7 +372,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32994187" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40563992" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2613941" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -383,7 +380,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3297587" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32937366" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.27725437" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.2761394" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -395,16 +392,12 @@
       <window_info anchor="right" id="Maven" order="8" />
     </layout-to-restore>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Modificações Necessarias" />
     <MESSAGE value="Testando todas as funcoes de ClientePf na Ui" />
     <option name="LAST_COMMIT_MESSAGE" value="Testando todas as funcoes de ClientePf na Ui" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/model/MiniVan.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/model/Pickup.java" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -413,8 +406,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioEndereco.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Controller/IControllerCliente.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Controller/ControllerCliente.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/Excecao/VeiculoException.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/Excecao/RepositorioVeiculoException.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Excecao/RepositorioLocarException.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioClientePj.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -425,31 +416,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Excecao/RepositorioClientePjException.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Excecao/LocarException.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/Controller/ControllerLocar.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/Repositorio/RepositorioLocar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioLocar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="86" selection-start-line="12" selection-start-column="86" selection-end-line="12" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/model/Pessoa.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/model/Filial.java" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Object.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioVeiculo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/model/EmpresaLocacar.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/model/Endereco.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -458,59 +427,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/model/Locar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/model/Veiculo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/model/VeiculoTrabalho.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/model/Carro.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/model/VeiculoPasseio.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/model/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Controller/IControllerLocar.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/model/CarroTrabalho.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/Excecao/ClientePjException.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/model/Funcionario.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/model/ClientePj.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Repositorio/RepositorioClientePj.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Controller/IControllerClientePj.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Repositorio/RepositorioVeiculo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -532,89 +455,209 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/Throwable.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/model/ClientePf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding>
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/Throwable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-246">
-          <caret line="382" column="5" lean-forward="true" selection-start-line="382" selection-start-column="5" selection-end-line="382" selection-end-column="5" />
-          <folding>
-            <element signature="e#15782#15783#0" expanded="true" />
-            <element signature="e#15818#15819#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Excecao/ClientePfException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/Throwable.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Excecao/RepositorioClientePfException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioCLientePf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        <state relative-caret-position="165">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Controller/IControllerClientesPf.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Controller/Veiculo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Fachada/Fachada.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Repositorio/RepositorioVeiculo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+        <state relative-caret-position="484">
+          <caret line="55" column="21" lean-forward="true" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Excecao/VeiculoException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Excecao/RepositorioVeiculoException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Controller/ControllerClientePf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="150">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Repositorio/RepositorioLocar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/model/Locar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/model/VeiculoPasseio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Controller/ControllerVeiculo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/model/Cliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/model/ClientePj.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/model/ClientePf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Excecao/ClientePjException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/model/Carro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/model/Veiculo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Controller/IControllerClientePj.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Controller/IControllerLocar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Controller/IControllerVeiculo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Controller/ControllerLocar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioLocar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Repositorio/IRepositorioVeiculo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Repositorio/RepositorioClientePf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="41" column="6" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
+        <state relative-caret-position="180">
+          <caret line="12" column="66" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Excecao/ClientePfException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Ui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" column="40" lean-forward="true" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="364">
+          <caret line="72" column="38" lean-forward="true" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Fachada/Fachada.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Controller/IControllerClientesPf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -683,7 +726,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>11</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

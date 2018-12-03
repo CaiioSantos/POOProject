@@ -2,6 +2,7 @@ package com.company.Repositorio;
 
 import com.company.Excecao.LocarException;
 import com.company.Excecao.RepositorioLocarException;
+import com.company.model.ClientePf;
 import com.company.model.Locar;
 
 import java.util.ArrayList;

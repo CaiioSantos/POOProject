@@ -6,6 +6,8 @@ public abstract class Cliente {
     protected int telefone;
 
 
-    public abstract void Pagar ();
-
+    public abstract void pagar ();
+    public abstract void pagar (String codBoleto);
+    public abstract void pagar (int numeroCartao);
+    public abstract void pagar (String codBoleto , int numeroCartao);
 }
