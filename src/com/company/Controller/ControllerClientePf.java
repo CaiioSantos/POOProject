@@ -12,9 +12,7 @@ public class ControllerClientePf implements IControllerClientesPf {
     private RepositorioClientePf repositorioClientePf =  RepositorioClientePf.getInstance();
 
     public ControllerClientePf() throws ClientePfException, RepositorioClientePfException {
-
     }
-
     public static ControllerClientePf getInstance() throws ClientePfException, RepositorioClientePfException {
         if (instancia == null){
             instancia = new ControllerClientePf();
@@ -26,7 +24,6 @@ public class ControllerClientePf implements IControllerClientesPf {
         this.validarCpf(clientePf);
         this.repositorioClientePf.adicionarClientePf(clientePf);
     }
-
     @Override
     public void deletarClientePf(ClientePf clientePf) throws ClientePfException, RepositorioClientePfException {
         if(this.repositorioClientePf.pesquisarClientePorCpf(clientePf.getCpf()) == null){
@@ -35,32 +32,24 @@ public class ControllerClientePf implements IControllerClientesPf {
             this.repositorioClientePf.deletarClientePf(clientePf);
         }
     }
-
     @Override
     public void atualizarClientePf(ClientePf clientePf) throws ClientePfException, RepositorioClientePfException {
         this.repositorioClientePf.atualizarClientePf(clientePf);
-
     }
-
     @Override
     public void validarCpf(ClientePf clientePf) throws ClientePfException, RepositorioClientePfException {
         if(clientePf.getCpf()==null){
             throw new ClientePfException("Por favor, Informe o CPF");
         }
     }
-
     @Override
     public ClientePf pesquisarClientePorNome(String nomeCliente) throws ClientePfException, RepositorioClientePfException {
         return this.repositorioClientePf.pesquisarClientePorNome(nomeCliente);
-
     }
-
     @Override
     public ClientePf pesquisarClientePorCpf(String cpfCliente) throws ClientePfException, RepositorioClientePfException {
         return this.repositorioClientePf.pesquisarClientePorCpf(cpfCliente);
-
     }
-
     @Override
     public ArrayList<ClientePf> listarClientes() throws ClientePfException, RepositorioClientePfException {
         return this.repositorioClientePf.listarClientes();

@@ -30,7 +30,7 @@ public class RepositorioClientePf implements IRepositorioCLientePf {
     @Override
     public void deletarClientePf(ClientePf clientePf) throws ClientePfException, RepositorioClientePfException {
         for (int i=0; i< this.clientePfArrayList.size(); i++){
-            if(this.clientePfArrayList.get(i).equals(clientePf)) {
+            if(this.clientePfArrayList.get(i).getCpf().equals(clientePf.getCpf())); {
                     clientePfArrayList.remove(i);
             }
         }
@@ -41,7 +41,7 @@ public class RepositorioClientePf implements IRepositorioCLientePf {
     @Override
     public void atualizarClientePf(ClientePf clientePf) throws ClientePfException, RepositorioClientePfException {
         for(int i =0; i<this.clientePfArrayList.size(); i++){
-            if (this.clientePfArrayList.get(i).equals(clientePf)){
+            if (this.clientePfArrayList.get(i).getNome().equals(clientePf)){
                 this.clientePfArrayList.set(i, clientePf);
                 break;
             }

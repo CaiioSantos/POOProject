@@ -14,6 +14,7 @@ import java.util.Scanner;
 
 public class Main  {
     static Scanner input = new Scanner(System.in);
+    private  RepositorioClientePf repositorioClientePf;
 
     public static void main(String[] args) throws ClientePfException, RepositorioClientePfException{
         Fachada fachada = Fachada.getInstance();
@@ -30,7 +31,6 @@ public class Main  {
     }
     private static void showMenuPf(Fachada fachada) throws ClientePfException, RepositorioClientePfException {
         ClientePf clientePf = new ClientePf("", "", "");
-
         System.out.println("Digite 1 para adicionar cliente \n Digite 2 para listar o clientes \n Digite 3 para excluir cliente \n Ditite 4 para atualizar clientes");
         int opcao;
         do {
@@ -55,12 +55,27 @@ public class Main  {
                 showMenuPf(fachada);
                     break;
                 case 3:
-                    System.out.println("Digite o nome do Cliente a ser deletado");
-                    fachada.deletarClientePf(clientePf);
+                    System.out.println("Digite o cpf do Cliente a ser deletado");
+                    clientePf.setCpf(input.next());
+                    try {
+                        fachada.deletarClientePf(clientePf);
+                    }catch (ClientePfException| RepositorioClientePfException textExeption){
+                        textExeption.getMessage();
+                    }
                     showMenuPf(fachada);
                     break;
                 case 4:
-                    fachada.atualizarClientePf(clientePf);
+                    System.out.println("Digite o nome do cliente para atualizar cadastro");
+                        clientePf.setNome(input.next());
+                    System.out.println("Digite a atualização do tipo de CNH");
+                        clientePf.setCnhTipo(input.next());
+                        try {
+                            fachada.atualizarClientePf(clientePf);
+                        }catch (ClientePfException | RepositorioClientePfException e){
+                            e.printStackTrace();
+                        }
+                    showMenuPf(fachada);
+                        break;
             }
         }while (opcao !=0);
     }

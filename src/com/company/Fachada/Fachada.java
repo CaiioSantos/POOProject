@@ -29,12 +29,12 @@ public class Fachada implements IControllerClientesPf {
 
     @Override
     public void deletarClientePf(ClientePf clientePf) throws ClientePfException, RepositorioClientePfException {
-
+        this.controllerClientesPf.deletarClientePf(clientePf);
     }
 
     @Override
     public void atualizarClientePf(ClientePf clientePf) throws ClientePfException, RepositorioClientePfException {
-
+            this.controllerClientesPf.atualizarClientePf(clientePf);
     }
 
     @Override
@@ -44,12 +44,12 @@ public class Fachada implements IControllerClientesPf {
 
     @Override
     public ClientePf pesquisarClientePorNome(String nomeCliente) throws ClientePfException, RepositorioClientePfException {
-        return null;
+        return this.controllerClientesPf.pesquisarClientePorNome(nomeCliente);
     }
 
     @Override
     public ClientePf pesquisarClientePorCpf(String cpfCliente) throws ClientePfException, RepositorioClientePfException {
-        return null;
+        return this.controllerClientesPf.pesquisarClientePorCpf(cpfCliente);
     }
 
     @Override
