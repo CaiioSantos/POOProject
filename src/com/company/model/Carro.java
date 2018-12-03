@@ -3,8 +3,8 @@ package com.company.model;
 public class Carro extends VeiculoPasseio {
 
 
-    public  Carro(String placa, String modelo){
-        this.placa = getPlaca();
+    public  Carro(String modelo){
+        
         this.modelo = getModelo();
 
     }

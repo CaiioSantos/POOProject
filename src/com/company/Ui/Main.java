@@ -9,6 +9,7 @@ import com.company.Fachada.Fachada;
 import com.company.Repositorio.IRepositorioCLientePf;
 import com.company.Repositorio.RepositorioClientePf;
 import com.company.Repositorio.RepositorioVeiculo;
+import com.company.Utils.Constants;
 import com.company.model.Carro;
 import com.company.model.ClientePf;
 import com.company.model.Veiculo;
@@ -93,7 +94,7 @@ public class Main  {
     }
 
     private static void CadastroVeiculoPassseio(Fachada fachada) throws VeiculoException, RepositorioVeiculoException {
-        Carro carro = new Carro(null,null);
+        Carro carro = new Carro(null);
         System.out.println("Digite 1 para adicionar veiculo \n Digite 2 para lista veiculo\n Digite 3 para deletar veiculo");
         int opcao;
         do {
@@ -102,8 +103,6 @@ public class Main  {
                 case 1:
                     System.out.println("Digite o nome do Carro a ser adicionado");
                     carro.setModelo(input.next());
-                    System.out.println("Digite a placa do veiculo");
-                    carro.setPlaca(input.next());
                     try {
                         fachada.adicionarVeiculo(carro);
                     } catch ( VeiculoException  | RepositorioVeiculoException e) {
@@ -112,36 +111,14 @@ public class Main  {
                     CadastroVeiculoPassseio(fachada);
                     break;
                 case 2:
-                    listarClientesPf(fachada.listarClientes());
-                    showMenuPf(fachada);
-                    break;
-                case 3:
-
-                    System.out.println("Digite o cpf do Cliente a ser deletado");
-                    clientePf.setCpf(input.nextInt());
-                    try {
-                        fachada.deletarClientePf(clientePf);
-                    }catch (ClientePfException| RepositorioClientePfException textExeption){
-                        textExeption.getMessage();
-                    }
-                    showMenuPf(fachada);
-                    break;
-                case 4:
-                    System.out.println("Digite o nome do cliente para atualizar cadastro");
-                    clientePf.setNome(input.next());
-                    System.out.println("Digite a atualização do tipo de CNH");
-                    clientePf.setCnhTipo(input.next());
-                    try {
-                        fachada.atualizarClientePf(clientePf);
-                    }catch (ClientePfException | RepositorioClientePfException e){
-                        e.printStackTrace();
-                    }
-                    showMenuPf(fachada);
-                    break;
             }
         }while (opcao !=0);
 
     }
+
+
+
+
 
     private static void listarClientesPf (ArrayList<ClientePf> clientePfArrayList){
         if (clientePfArrayList != null){
